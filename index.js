@@ -38,21 +38,29 @@ function getcolorscheme(){
     
      let url=`https://www.thecolorapi.com/scheme?hex=${hexvalue}&mode=${schemevalue}&count=6`;
     //console.log(url);
+    let sectionEl=document.getElementById("section-displaycolours");
     
     fetch(url)
     .then(response=>response.json())
     .then(data=>{
         let hexArray=data.colors;
+        let divhtml=''
+        for(let i=0;i<hexArray.length; i++){
+            divhtml+=`<div id="color${i}"></div>`;
+        }
+        for(let i=0;i<hexArray.length; i++){
+            divhtml+=`<div class='div-colour' id="color-text${i}">${hexArray[i].hex.value}</div>`;
+        }
+        sectionEl.innerHTML=divhtml;
+        
         for(let i=0;i<hexArray.length; i++){
             let eachdiv=document.getElementById(`color${i}`);
-            let colourtextdiv=document.getElementById(`color-text${i}`);
-            //console.log(eachdiv);
-            
-            let clr=hexArray[i].hex.value;
-            //console.log(clr);
-            eachdiv.style.backgroundColor=clr;
-            colourtextdiv.textContent=clr;
+            eachdiv.style.backgroundColor=hexArray[i].hex.value;
+        
         }
+
+           
+      
         
     
     })
