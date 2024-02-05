@@ -1,0 +1,45 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lobster&family=Lora:ital,wght@1,500&family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <h2>Colour Scheme Picker</h2>
+        </main>
+        <div>
+            <input type="color" id="hexpicker">
+            <select id="schemePicker">
+                <option>Monochrome</option>
+                <option>Monochrome-dark</option>
+                <option>Monochrome-light</option>
+                <option>Analogic</option>
+                <option>Complement</option>
+                <option>Analogic-complement</option>
+                <option>Triad</option>
+            </select>
+            <button id="btn-getscheme">Get Colour scheme</button>
+        </div>
+        <section>
+            <div id="color0"></div>
+            <div id="color1"></div>
+            <div id="color2"></div>
+            <div id="color3"></div>
+            <div id="color4"></div>
+            <div id="color5"></div>
+                   
+            <div class='div-colour' id="color-text0"></div>
+            <div class='div-colour' id="color-text1"></div>
+            <div class='div-colour' id="color-text2"></div>
+            <div class='div-colour' id="color-text3"></div>
+            <div class='div-colour' id="color-text4"></div>
+            <div class='div-colour' id="color-text5"></div>
+            
+         
+        </section>
+        <script src="index.js"></script>
+        
+    </body>
+</html>

@@ -1,0 +1,42 @@
+html, body {
+    margin: 0;
+    padding: 0 10px;
+    font-family: 'Lato', sans-serif;
+    /*font-family: 'Lobster', sans-serif;*/
+    
+}
+
+select{
+    font-family: inherit;
+     height: 1.75em;
+     
+}
+button{
+    font-family: inherit;
+}
+
+input[type=text] {
+   
+}
+
+section{
+    height: 70vh;
+    /*border: 1px solid red;*/
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 5fr 1fr;
+    
+}
+
+section div{
+    border: 1px solid black;
+}
+
+#color0{
+    background-color: none;
+}
+
+.div-colour{
+    border: none;
+}
